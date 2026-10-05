@@ -28,10 +28,32 @@ etc1.py                ETC1/ETC1A4 块解码
 nlp_pack.py            img.bin 的包索引读取
 rom.py                 解密 ROM 懒加载读取
 test_nlpp_extract.py   测试，14 项
+AGENTS.md              给 AI Agent 的操作说明（Claude Code / Cursor / Codex 会自动读）
 requirements.txt       numpy, pillow
 LICENSE                MIT（只覆盖代码，不含游戏素材）
 PUBLISH.md             发布改造笔记
 ```
+
+### 不会命令行？丢给 AI 用
+
+`AGENTS.md` 就是为这个写的：告诉 AI 有哪些命令、必须遵守哪些规则、
+以及**为什么不要自己重新实现解码**（那八条规则里的第 1 和第 3 条，
+自己写几乎一定错，而且错了还看不出来）。
+
+把工具目录用 Claude Code / Cursor / Codex 打开，或者直接把 `AGENTS.md` 整段粘给 AI，
+然后说人话就行：
+
+```
+先读 AGENTS.md 和 README.md。我的 img.bin 在 <路径>。
+先建索引，然后用 list 告诉我都有哪些归档。
+```
+
+```
+帮我把愛花婚礼那张合成出来，输出到 D:\out
+```
+
+AI 会自己查归档名、看尺寸、选命令。
+
 
 ## 用法
 
