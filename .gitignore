@@ -1,0 +1,45 @@
+# ---- 游戏数据：绝对不要提交
+img.bin
+*.3ds
+*.cia
+*.cxi
+*.cci
+*.app
+*.ncch
+romfs/
+romfs.bin
+*.bclim
+*.bch
+*.texi
+*.bclyt
+*.bclan
+boot9.bin
+aeskeydb.bin
+seeddb.bin
+*.3dsx
+
+# ---- 工具生成的：不要提交
+tex_inventory.json
+manifest.tsv
+out/
+output/
+*.png
+*.jpg
+!docs/*.png
+
+# ---- Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ---- 编辑器 / 系统
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
